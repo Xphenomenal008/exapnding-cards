@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="cointner flex items-center h-80 w-[80%] gap-3 bg-black">
+        <div class="image"><img src="iamges/10-Best-Anime-Like-Solo-Leveling.jpg " class="w-100 h-64 hover:opacity-75 transition-opacity duration-75" id="image"></div>
+        <div class="image"><img src="iamges/GAMIC2022FB-big_thumb.jpg" class="w-24 h-64 hover:opacity-75" id="image"></div>
+        <div class="image"><img src="iamges/monogatari-series-f10abe7.jpg" class="w-24 h-64  hover:opacity-75" id="image"></div>
+        <div class="image"><img src="iamges/Naze-Boku-no-Sekai_Portada.jpg" class="w-24 h-64  hover:opacity-75" id="image"></div>
+     </div>
+</body>
+<script>
+    let image=document.querySelectorAll("#image")
+    let con=document.querySelector(".cointner")
+    image.forEach(images => {
+    images.addEventListener("click",()=>{
+if(images.classList.contains("w-100")){
+    images.classList.remove("w-100")
+   images.classList.add("w-24")
+   images.classList.add("hover:text-white","focus:ring-1 focus:ring-sky-500")
+}else{
+    images.classList.remove("w-24")
+   images.classList.add("w-100")
+}
+    })
+    
+ });
+
+</script>
+</html>
